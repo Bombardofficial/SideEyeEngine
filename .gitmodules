@@ -1,0 +1,3 @@
+[submodule "SideEye/vendor/spdlog"]
+	path = SideEye/vendor/spdlog
+	url = https://github.com/gabime/spdlog
