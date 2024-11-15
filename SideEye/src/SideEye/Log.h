@@ -2,7 +2,8 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
-#include <memory>
+#include "spdlog/fmt/ostr.h"
+
 namespace SideEye {
 	class SIDEEYE_API Log
 	{

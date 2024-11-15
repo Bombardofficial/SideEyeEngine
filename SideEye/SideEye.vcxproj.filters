@@ -4,6 +4,9 @@
     <Filter Include="SideEye">
       <UniqueIdentifier>{2D2419F5-9903-9890-A21B-23670E7AFEF1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SideEye\Events">
+      <UniqueIdentifier>{71BBF0B3-5D89-E4B9-461D-55E0328AC01E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\SideEye.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\SideEye\EntryPoint.h">
       <Filter>SideEye</Filter>
     </ClInclude>
+    <ClInclude Include="src\SideEye\Events\ApplicationEvent.h">
+      <Filter>SideEye\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SideEye\Events\Event.h">
+      <Filter>SideEye\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SideEye\Events\KeyEvent.h">
+      <Filter>SideEye\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SideEye\Events\MouseEvent.h">
+      <Filter>SideEye\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\SideEye\Log.h">
       <Filter>SideEye</Filter>
     </ClInclude>
+    <ClInclude Include="src\sepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SideEye\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\SideEye\Log.cpp">
       <Filter>SideEye</Filter>
     </ClCompile>
+    <ClCompile Include="src\sepch.cpp" />
   </ItemGroup>
 </Project>
