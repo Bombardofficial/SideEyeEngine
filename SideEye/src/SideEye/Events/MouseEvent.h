@@ -46,10 +46,12 @@ namespace SideEye {
 	};
 
 	class SIDEEYE_API MouseButtonEvent : public Event {
+
 	public:
 		inline int GetMouseButton() const { return m_Button; }
 
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+
 	protected:
 		MouseButtonEvent(int button) : m_Button(button) {}
 
@@ -57,6 +59,7 @@ namespace SideEye {
 	};
 
 	class SIDEEYE_API MouseButtonPressedEvent : public MouseButtonEvent {
+
 	public:
 		MouseButtonPressedEvent(int button) : MouseButtonEvent(button) {}
 
@@ -70,4 +73,19 @@ namespace SideEye {
 		EVENT_CLASS_TYPE(MouseButtonReleased)
 	};
 
+	class MouseButtonReleasedEvent : public MouseButtonEvent
+	{
+	public:
+		MouseButtonReleasedEvent(const int button)
+			: MouseButtonEvent(button) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseButtonReleasedEvent: " << m_Button;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseButtonReleased)
+	};
 }

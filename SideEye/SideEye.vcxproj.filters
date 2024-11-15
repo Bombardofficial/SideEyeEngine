@@ -35,6 +35,10 @@
       <Filter>SideEye</Filter>
     </ClInclude>
     <ClInclude Include="src\sepch.h" />
+    <ClInclude Include="src\SideEye\Window.h">
+      <Filter>SideEye</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plaftform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SideEye\Application.cpp">
@@ -44,5 +48,6 @@
       <Filter>SideEye</Filter>
     </ClCompile>
     <ClCompile Include="src\sepch.cpp" />
+    <ClCompile Include="src\Plaftform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

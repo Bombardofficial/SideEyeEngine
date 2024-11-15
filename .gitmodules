@@ -1,3 +1,6 @@
 [submodule "SideEye/vendor/spdlog"]
 	path = SideEye/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "SideEye/vendor/GLFW"]
+	path = SideEye/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW
